@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Author: Nicholas Clifford
+    Date: 6/23/2024
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Fit For Fun Fitness Club</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="info.html">Info</a>
+    </nav>
+    <div class="container">
+        <form method="get" action="thankyou.html">
+
+            <fieldset>
+                <legend>
+                    Contact Information
+                </legend>
+                <label for="fname">
+                    First Name:
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                </label><br>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" required placeholder="example@example.com">
+                </label>
+                <label for="phone">
+                    Phone:
+                    <input type="text" name="phone" id="phone" required placeholder="4175555555">
+                </label>
+                <label for="contact">
+                    Preffered Contact Method
+                    <select name="contact" id="contact">
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                        <option value="text">Text</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Classes
+                </legend>
+                <input type="checkbox" name="crosst" id="crosst" value="crosst">
+                <label for="crosst">Cross Training</label>
+                <input type="checkbox" name="sprint" id="sprint" value="sprint">
+                <label for="sprint">Sprint</label>
+                <input type="checkbox" name="spin" id="spin" value="spin">
+                <label for="spin">Spin</label>
+                <input type="checkbox" name="bodypump" id="bodypump" value="bodypump">
+                <label for="bodypump">BodyPump</label><br>
+                <input type="checkbox" name="bodyc" id="bodyc" value="bodyc">
+                <label for="bodyc">BodyCombat</label>
+                <input type="checkbox" name="stepi" id="stepi" value="stepi">
+                <label for="stepi">Step Interval</label>
+                <input type="checkbox" name="act" id="act" value="act">
+                <label for="act">Advanced Cross Training</label>
+                <input type="checkbox" name="mf" id="mf" value="mf">
+                <label for="mf">MixxedFIT</label>
+                <input type="checkbox" name="zumba" id="zumba" value="zumba">
+                <label for="zumba">Zumba</label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Preferred Class Time
+                </legend>
+                <input type="radio" name="ampm" id="am" value="am">
+                <label for="am">AM</label>
+                <input type="radio" name="ampm" id="pm" value="pm">
+                <label for="pm">PM</label>
+            </fieldset>
+
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <p>
+            Email: <a href="mailto:fitforfitnessclub@gmail.com">fitforfitnessclub@gmail.com</a> |
+            Phone: <a href="tel:4175555555">(417)555-5555</a> |
+            2364 S Main Street Ave, Springfield MO, 69200 |
+            Fit For Fitness Club &copy; 2024
+        </p>
+    </footer>
+
+</body>
+
+</html>

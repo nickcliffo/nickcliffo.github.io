@@ -20,7 +20,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,9 +63,91 @@ body {
     font-size: xx-large;
 }
 
+.info h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: xx-large;
+}
+
 .info p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: larger;
 }
+
+
+.projects {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-items: center;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'link1 link2 link3';
+}
+
+.projectshead {
+    display: grid;
+    justify-items: center;
+    margin-top: 130px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    box-shadow: 2px 15px 20px;
+
+}
+
+.projects a {
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.projects a:hover {
+    color: orange;
+}
+
+.projects p {
+    margin-top: 50px;
+    font-size: larger;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+
+.link1, .link2, .link3 {
+    text-align: center;
+    width: 15rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: orange;
+}
+
+footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: white;
+}
+
 

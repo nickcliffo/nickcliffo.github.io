@@ -1,0 +1,319 @@
+/* 
+Author: Nicholas Clifford
+Date: 7/17/2024
+*/
+
+
+:root {
+    --background: rgb(0,0,0);
+    --accents: rgb(252,169,3);
+}
+
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+nav ul {
+    display: grid;
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav a {
+    border-radius: 100px;
+    background-color: black;
+    display: block;
+    text-decoration: none;
+    padding: 0.6rem;
+    text-align: center;
+    color: var(--accents);
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover {
+    background-color: var(--accents);
+    color: black;
+}
+
+.main {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'showcases showcases top1'
+    'showcases showcases top2';
+}
+
+.showcase {
+    grid-area: showcases;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.showcase img {
+    padding-top: 100px;
+}
+
+.webpage1, .webpage2, h3 {
+    color: var(--accents);
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.webpage1, .webpage2, .btn {
+    margin-top: 30px;
+
+}
+
+.btn {
+    text-decoration: none;
+    background-color: var(--background);
+    color: var(--accents);
+    padding: 0.6rem 1.3rem;
+    border-radius: 100px;
+}
+
+.main a:hover {
+    background-color: var(--accents);
+    color: var(--background);
+}
+
+
+.webpage1 {
+    display: grid;
+    place-items: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+.webpage2 {
+    display: grid;
+    place-items: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+.service {
+    display: grid;
+    padding: 3em;
+    grid-template-areas: 
+        'video respooling video2';
+    grid-gap: 20px;
+    align-items: start;
+}
+
+#video, #video2 {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Optional: Limit maximum width */
+}
+
+/* .service {
+    display: grid;
+    padding: 3em;
+    grid-template-areas: 
+    'video respooling video2';
+    grid-gap: 20px;
+}
+
+#video {
+    max-width: 500px;
+    max-height: 600px;
+}
+
+#video2 {
+    max-width: 500px;
+    max-height: 600px;
+} */
+
+.service h2 {
+    font-size: 2.0rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--accents);
+}
+.service p{
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--background);
+}
+
+.plastics {
+    display: grid;
+    grid-template-areas: 
+    'lures luresimg';
+}
+
+.lures {
+    border-radius: 50px;
+    text-align: center;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--background);
+    color: var(--accents);
+}
+
+.lures2 {
+    display: none;
+}
+
+.worms2 {
+    display: none;
+}
+
+.header {
+    padding-top: 50px;
+    display: grid;
+    grid-gap: 100px;
+}
+
+.header h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: var(--accents);
+}
+
+.rodsimg {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.softbait {
+    display: grid;
+    grid-template-areas: 
+    'worms wormsimg';
+}
+
+.worms {
+    border-radius: 50px;
+    text-align: center;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--background);
+    color: var(--accents);
+}
+
+.disclaimer {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+
+.disclaimer p {
+    border-radius: 100px;
+    text-align: center;
+    background-color: var(--background);
+    color: var(--accents);
+}
+
+footer {
+    font-size: 1.2rem;
+    border-top: solid black;
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--background);
+}
+
+footer a:hover {
+    color: var(--accents);
+}
+
+@media (max-width: 1049px) {
+    #video2 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 758px) {
+    .plastics {
+        grid-template-areas: 
+        'lures2'
+        'luresimg';
+    }
+
+    .webpage1, .webpage2 {
+        display: none;
+    }
+    
+    .lures {
+        display: none;
+    }
+
+    .disclaimer {
+        display: none;
+    }
+
+    .luresimg {
+        padding-left: 90px;
+    }
+
+    .lures2 {
+        display: contents;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: var(--accents);
+        font-size: 2rem;
+    }
+
+    .softbait {
+        grid-template-areas: 
+        'worms2'
+        'wormsimg';
+        grid-gap: 30px;
+    }
+
+    .worms {
+        display: none;
+    }
+
+    .worms2 {
+        display: contents;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--accents);
+        font-size: 2rem;
+    }
+
+    .wormsimg {
+        padding-left: 90px;
+    }
+
+    .rodsimg {
+        padding-left: 90px;
+    }
+}
+
+
+@media (max-width: 665px ) {
+    .service {
+        grid-template-areas: 
+        'respooling'
+        'video';
+    }
+    
+    #video {
+        max-width: 400px;
+        max-height: 500px;
+        padding-left: 20px;
+    }
+}

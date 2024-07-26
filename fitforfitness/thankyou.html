@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--
+  Author: Nicholas Clifford
+  Date: 6/23/2024
+  -->
+  <meta charset="utf-8">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Thank you</title>
+</head>
+
+<body>
+  <h1>Fit For Fun Fitness Club</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="classes.html">Classes</a>
+    <a href="info.html">Info</a>
+  </nav>
+
+  <div class="container">
+    <h2>Thank you for requesting an appt! We will be in touch soon!</h2>
+
+    <script>
+      printQuery();
+    </script>
+  </div>
+  <footer>
+    <p>
+      Email: <a href="mailto:fitforfitnessclub@gmail.com">fitforfitnessclub@gmail.com</a> |
+      Phone: <a href="tel:4175555555">(417)555-5555</a> |
+      2364 S Main Street Ave, Springfield MO, 69200 |
+      Fit For Fitness Club &copy; 2024
+    </p>
+  </footer>
+</body>
+
+</html>

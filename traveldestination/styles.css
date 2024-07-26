@@ -1,0 +1,186 @@
+/*
+Author: Nicholas Clifford
+Date: 6/28/2024
+*/
+
+html {
+    background-color: white
+}
+
+body header h1 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    font-family: fantasy;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.information h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: solid 1px black;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom: solid 1px black;
+    padding-bottom: 20px;
+}
+
+.information p {
+    text-align: center;
+}
+
+div.scroll-container img {
+    max-width: 480px;
+}
+
+.rentals {
+    display: none;
+}
+
+.rentalimg {
+    display: none;
+}
+
+.ftf {
+    display: none;
+}
+
+footer p {
+    border-top: solid 1px black;
+    text-align: center;
+    font-size: large;
+}
+
+@media screen and (min-width: 800px) {
+
+    .rentals {
+        display: block;
+    }
+
+    .rentalimg {
+        display: contents;
+    }
+
+
+    div.scroll-container {
+        padding-top: 10px;
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    div.scroll-container img {
+        padding: 10px;
+        max-width: 800px;
+    }
+
+    .information h2 {
+        color: white;
+        border-bottom: solid 1px white;
+    }
+
+    .information {
+        background-color: #333;
+        border-radius: 15px;
+        margin: 80px;
+    }
+
+    .information p {
+        background-color: #333;
+        color: white;
+        border-radius: 15px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 20px;
+    }
+
+    .rentals h2 {
+        border-bottom: solid 1px white;
+    }
+
+    .rentals {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        border-radius: 15px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 20px;
+        background-color: #333;
+        border-radius: 15px;
+        margin: 80px;
+    }
+
+    .rentalimg img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+}
+
+@media screen and (min-width: 1129px) {
+
+    .ftf {
+        display: block;
+    }
+
+    .ftf {
+        padding-top: 100px;
+        line-height: 1.5;
+    }
+
+    .facts,
+    .tips,
+    .flags {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        text-align: center;
+        color: white;
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+        border-radius: 15px;
+    }
+
+    .facts,
+    .tips,
+    .flags,
+    ul li {
+        list-style-type: none;
+        background-color: #333;
+    }
+
+    .flags {
+        margin-right: 0%;
+    }
+
+    .facts h2 {
+        margin-left: 20px;
+    }
+
+    .tips h2 {
+        margin-left: 10px;
+    }
+
+    .flags h2 {
+        margin-left: 30px;
+    }
+
+    footer {
+        margin-top: 300px;
+
+    }
+}
