@@ -164,8 +164,170 @@ footer p {
 
 .container2 {
     justify-items: center;
-    margin-top: 50px;
     display: grid;
+    width: 850px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 2px 15px 20px;
+}
+
+.container2 li {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.container2 h2 {
+
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    background-color: white;
+    border-bottom: black solid;
+}
+
+.parts {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.container3 {
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: grid;
+    grid-template-areas: 
+    'email phone';
+    justify-items: center;
+}
+
+.email, .phone {
+    background-color: white;
+    padding: 20px;
+    width: 300px; 
+    box-shadow: 2px 15px 20px;
+}
+
+.email a, .phone a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.email h2, .phone h2 {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.email a:hover, .phone a:hover {
+    color: orange;
+}
+
+.container4 {
+    margin: auto;
+    margin-top: 100px;
+    font-size: 1rem;
+    display: grid;
+    justify-content: center;
+    width: 700px;
+    background-color: white;
+}
+
+.container4 {
+    margin: auto;
+    margin-top: 100px;
+    width: 60%;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 15px 20px;
+
+}
+
+.container4 h2 {
+    padding: 20px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+table {
+    margin-top: 150px;
+    margin-left: 300px;
+    width: 60%; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td {
+    border: 2px black solid;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 102%;
+}
+
+tr:nth-child(even) {
+    background-color: #ff9b71;
+    opacity: .85;
+}
+
+tr:nth-child(odd) {
+    background-color: #b56b45;
+    opacity: .85;
+}
+
+th {
+    background-color: #444140;
+    opacity: .85;
 }
 
 
+@media (max-width: 979px) {
+    .infoimage {
+        display: none;
+    }
+
+    .aboutme {
+        grid-gap: 0px;
+    }
+
+    .projects {
+        grid-template-areas: 
+        'link1'
+        'link2'
+        'link3';
+    }
+    .container3 {
+        grid-template-areas: 
+        'email'
+        'phone';
+        grid-gap: 40px;
+    }
+
+    .container2 {
+        width: 400px;
+    }
+
+    table {
+        margin-left: 200px;
+        width: 60%; 
+    }
+
+}
+
+@media (max-width: 500px) {
+    table {
+        margin-left: 10px;
+    }
+
+}

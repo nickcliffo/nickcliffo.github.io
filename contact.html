@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- 
+    Author: Nicholas Clifford
+    Date: 7/24/24
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <script src="https://kit.fontawesome.com/f76182bdf3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="header">
         <a href="#" class="logo">Nicholas Clifford</a>
 
         <nav class="navbar">
             <a href="index.html">Homepage</a>
-            <a href="resume.html">Job History</a>
             <a href="projects.html">Projects</a>
+            <a href="schedule.html">Schedule</a>
             <a href="contact.html">Contact Me</a>
         </nav>
     </header>
 
+    <section class="container3">
+        <div class="email">
+            <h2>Email Me</h2>
+            <a href="mailto:jnicholasclifford@gmail.com"><i class="fa-solid fa-envelope"></i>
+                jnicholasclifford@gmail.com</a>
+        </div>
+        <div class="phone">
+            <h2>Call Me</h2>
+            <a href="tel:4178308898"><i class="fa-solid fa-phone"></i> (417)830-8898</a>
+        </div>
+    </section>
+
+
+    <!-- Contact Form  -->
+    <form>
+        <div class="container4">
+            <h2>Please fill out the form below if you would like for me to contact you.</h2>
+
+            <fieldset>
+                <legend>
+                    Contact Information
+                </legend>
+                <label for="fname">
+                    First Name:
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                </label><br>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" required placeholder="example@example.com">
+                </label>
+                <label for="phone">
+                    Phone:
+                    <input type="text" name="phone" id="phone" required placeholder="4175555555">
+                </label>
+                <label for="contact">
+                    Preffered Contact Method
+                    <select name="contact" id="contact">
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                        <option value="text">Text</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Preferred Contact Time
+                </legend>
+                <input type="radio" name="ampm" id="am" value="am">
+                <label for="am">AM</label>
+                <input type="radio" name="ampm" id="pm" value="pm">
+                <label for="pm">PM</label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Additional Info.
+                </legend>
+                <textarea name="message" id="message" rows="10" cols="50"></textarea>
+            </fieldset>
+
+            <input class="submit" type="submit" value="Submit">
+        </div>
+    </form>
+
+
+
+
+
     <footer>
         <p>
-            Nicholas Clifford &copy; 2024 | <i class="fa-solid fa-phone"></i> <a href="tel:4178308898"> (417)830-8898</a> | <i class="fa-regular fa-envelope"></i> <a href="mailto:jnicholasclifford@gmail.com"> jnicholasclifford@gmail.com</a>
+            Nicholas Clifford &copy; 2024 | <i class="fa-solid fa-phone"></i> <a href="tel:4178308898">
+                (417)830-8898</a> | <i class="fa-regular fa-envelope"></i> <a href="mailto:jnicholasclifford@gmail.com">
+                jnicholasclifford@gmail.com</a>
         </p>
     </footer>
 </body>
+
 </html>
